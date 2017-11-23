@@ -42,7 +42,7 @@ yarn dev
 **Generate a production build in `./build`:**
 
 ```sh
-npm run build
+yarn build
 ```
 
 You can now deploy the contents of the `build` directory to production!
