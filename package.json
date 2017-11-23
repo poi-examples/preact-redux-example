@@ -1,12 +1,12 @@
 {
   "name": "preact-redux-example",
   "version": "1.0.0",
-  "description": "Ready-to-go Preact + Redux starter project, powered by Preact CLI.",
+  "description": "Ready-to-go Preact + Redux starter project, powered by Poi.",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build",
-    "serve": "preact build && preact serve",
-    "dev": "preact watch",
+    "build": "poi build",
+    "serve": "poi build && serve",
+    "dev": "poi",
     "lint": "eslint src"
   },
   "eslintConfig": {
@@ -24,11 +24,16 @@
     "if-env": "^1.0.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
-    "preact-cli": "^2.0.0"
+    "poi": "^9.5.4"
   },
   "dependencies": {
     "preact": "^8.1.0",
     "preact-redux": "^1.2.0",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "serve": "^6.4.1"
+  },
+  "poi": {
+    "entry": "src/index.js",
+    "jsx": "h"
   }
 }

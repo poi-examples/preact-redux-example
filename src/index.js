@@ -1,12 +1,14 @@
+import { render, h } from 'preact';
 import { Provider } from 'preact-redux';
 import store from './store';
 import App from './components/app';
-import './style';
+import './style/index.less';
 
-export default () => (
+render(
 	<div id="outer">
 		<Provider store={store}>
 			<App />
 		</Provider>
-	</div>
+	</div>,
+	document.getElementById('app')
 );
